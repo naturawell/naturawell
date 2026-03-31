@@ -1,0 +1,261 @@
+<!DOCTYPE html>YOUR_AFFILIATE_LINK_HERE
+<html lang="en">YOUR_AFFILIATE_LINK_HERE
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NaturaWell – Health & Wellness South Africa</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --green:#1D9E75;--green-light:#E1F5EE;--green-dark:#085041;
+    --amber:#BA7517;--amber-light:#FAEEDA;
+    --text:#1a1a1a;--muted:#555;--border:#e5e5e5;--bg:#fafaf8;
+  }
+  body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;font-size:15px;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+
+  /* NAV */
+  nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:100}
+  .logo{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--green-dark);letter-spacing:-0.5px}
+  .logo span{color:var(--green)}
+  .nav-links{display:flex;gap:1.5rem;font-size:14px;color:var(--muted)}
+  .nav-links a:hover{color:var(--green)}
+  .nav-cta{background:var(--green);color:#fff;padding:0.45rem 1.1rem;border-radius:99px;font-size:13px;font-weight:500}
+
+  /* HERO */
+  .hero{background:var(--green-light);padding:4rem 2rem 3.5rem;text-align:center;position:relative;overflow:hidden}
+  .hero-tag{display:inline-block;background:var(--green);color:#fff;font-size:12px;font-weight:500;padding:4px 14px;border-radius:99px;margin-bottom:1.2rem;letter-spacing:0.5px}
+  .hero h1{font-family:'Fraunces',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:600;color:var(--green-dark);line-height:1.15;max-width:680px;margin:0 auto 1rem}
+  .hero h1 em{font-style:italic;color:var(--green)}
+  .hero p{color:var(--muted);max-width:500px;margin:0 auto 2rem;font-size:16px}
+  .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+  .btn-primary{background:var(--green);color:#fff;padding:0.7rem 1.6rem;border-radius:99px;font-weight:500;font-size:15px;transition:opacity 0.2s}
+  .btn-primary:hover{opacity:0.88}
+  .btn-outline{border:1.5px solid var(--green);color:var(--green);padding:0.7rem 1.6rem;border-radius:99px;font-weight:500;font-size:15px;transition:background 0.2s}
+  .btn-outline:hover{background:var(--green-light)}
+  .hero-stats{display:flex;justify-content:center;gap:2.5rem;margin-top:2.5rem;flex-wrap:wrap}
+  .stat{text-align:center}
+  .stat strong{display:block;font-family:'Fraunces',serif;font-size:1.6rem;color:var(--green-dark)}
+  .stat span{font-size:12px;color:var(--muted)}
+
+  /* SECTIONS */
+  section{padding:3rem 2rem}
+  .section-label{font-size:12px;font-weight:500;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.5rem}
+  .section-title{font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:600;color:var(--green-dark);margin-bottom:0.5rem}
+  .section-sub{color:var(--muted);max-width:480px;margin-bottom:2rem;font-size:15px}
+  .center{text-align:center}
+  .center .section-sub{margin:0 auto 2rem}
+
+  /* CATEGORIES */
+  .categories{background:var(--bg)}
+  .cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
+  .cat-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.2rem 1rem;text-align:center;cursor:pointer;transition:border-color 0.2s,transform 0.2s}
+  .cat-card:hover{border-color:var(--green);transform:translateY(-2px)}
+  .cat-icon{font-size:28px;margin-bottom:0.5rem;display:block}
+  .cat-card h3{font-size:13px;font-weight:500;color:var(--text)}
+  .cat-card span{font-size:11px;color:var(--muted)}
+
+  /* FEATURED PRODUCTS */
+  .prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+  .prod-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#fff;transition:box-shadow 0.2s}
+  .prod-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.08)}
+  .prod-img{background:var(--green-light);height:160px;display:flex;align-items:center;justify-content:center;font-size:52px}
+  .prod-body{padding:1rem}
+  .prod-tag{font-size:11px;font-weight:500;color:var(--green);background:var(--green-light);padding:2px 8px;border-radius:99px;display:inline-block;margin-bottom:0.5rem}
+  .prod-body h3{font-size:14px;font-weight:500;margin-bottom:0.3rem;color:var(--text)}
+  .prod-body p{font-size:12px;color:var(--muted);margin-bottom:0.8rem;line-height:1.5}
+  .prod-footer{display:flex;align-items:center;justify-content:space-between}
+  .prod-price{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:var(--green-dark)}
+  .prod-btn{background:var(--green);color:#fff;font-size:12px;padding:6px 14px;border-radius:99px;font-weight:500}
+  .prod-rating{font-size:11px;color:var(--amber);margin-bottom:4px}
+
+  /* BLOG */
+  .blog{background:var(--bg)}
+  .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+  .blog-card{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:pointer;transition:transform 0.2s}
+  .blog-card:hover{transform:translateY(-2px)}
+  .blog-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px}
+  .blog-body{padding:1rem}
+  .blog-meta{font-size:11px;color:var(--muted);margin-bottom:0.4rem}
+  .blog-body h3{font-size:14px;font-weight:500;line-height:1.4;margin-bottom:0.4rem}
+  .blog-body p{font-size:12px;color:var(--muted);line-height:1.5}
+  .read-more{font-size:12px;color:var(--green);font-weight:500;margin-top:0.6rem;display:inline-block}
+
+  /* NEWSLETTER */
+  .newsletter{background:var(--green-dark);color:#fff;text-align:center;padding:3rem 2rem}
+  .newsletter h2{font-family:'Fraunces',serif;font-size:1.8rem;margin-bottom:0.5rem}
+  .newsletter p{opacity:0.8;margin-bottom:1.5rem;font-size:15px}
+  .nl-form{display:flex;gap:0.5rem;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+  .nl-form input{flex:1;min-width:200px;padding:0.65rem 1rem;border-radius:99px;border:none;font-size:14px;outline:none}
+  .nl-form button{background:var(--green);color:#fff;border:none;padding:0.65rem 1.4rem;border-radius:99px;font-size:14px;font-weight:500;cursor:pointer}
+
+  /* FOOTER */
+  footer{background:#111;color:#aaa;padding:2rem;text-align:center;font-size:13px}
+  footer strong{color:#fff;font-family:'Fraunces',serif;font-size:1rem}
+  .footer-links{display:flex;gap:1.5rem;justify-content:center;margin:1rem 0;flex-wrap:wrap}
+  .footer-links a{color:#aaa;font-size:12px}
+  .footer-links a:hover{color:#fff}
+  .disclaimer{font-size:11px;opacity:0.5;max-width:500px;margin:0.5rem auto 0;line-height:1.6}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Natura<span>Well</span></div>
+  <div class="nav-links">
+    <a href="#">Supplements</a>
+    <a href="#">Fitness Gear</a>
+    <a href="#">Nutrition</a>
+    <a href="#">Blog</a>
+  </div>
+  <a href="#" class="nav-cta">Shop Deals</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">South Africa's Health Hub</div>
+  <h1>Live Healthier,<br><em>Spend Smarter</em></h1>
+  <p>Honest reviews and the best prices on supplements, fitness gear, and wellness products — all in one place.</p>
+  <div class="hero-btns">
+    <a href="#products" class="btn-primary">Browse Products</a>
+    <a href="#blog" class="btn-outline">Read Reviews</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><strong>200+</strong><span>Products reviewed</span></div>
+    <div class="stat"><strong>15k+</strong><span>SA readers monthly</span></div>
+    <div class="stat"><strong>100%</strong><span>Honest reviews</span></div>
+  </div>
+</div>
+
+<section class="categories">
+  <div class="center">
+    <div class="section-label">Browse by category</div>
+    <h2 class="section-title">What are you looking for?</h2>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card"><span class="cat-icon">💊</span><h3>Supplements</h3><span>Protein, vitamins & more</span></div>
+    <div class="cat-card"><span class="cat-icon">🏋️</span><h3>Gym Equipment</h3><span>Home & commercial</span></div>
+    <div class="cat-card"><span class="cat-icon">🥗</span><h3>Nutrition</h3><span>Healthy food & snacks</span></div>
+    <div class="cat-card"><span class="cat-icon">🧘</span><h3>Wellness</h3><span>Yoga, meditation & sleep</span></div>
+    <div class="cat-card"><span class="cat-icon">👟</span><h3>Activewear</h3><span>Training clothing & shoes</span></div>
+    <div class="cat-card"><span class="cat-icon">⌚</span><h3>Fitness Tech</h3><span>Watches & trackers</span></div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="section-label">Editor's picks</div>
+  <h2 class="section-title">Top Rated This Month</h2>
+  <p class="section-sub">Handpicked products with the best value for South Africans.</p>
+  <div class="prod-grid">
+    <div class="prod-card">
+      <div class="prod-img">🥤</div>
+      <div class="prod-body">
+        <div class="prod-tag">Supplements</div>
+        <div class="prod-rating">★★★★★ (4.8)</div>
+        <h3>Whey Protein 1kg – Vanilla</h3>
+        <p>High-quality whey protein with 24g protein per serving. Best value on Takealot.</p>
+        <div class="prod-footer">
+          <span class="prod-price">R 499</span>
+          <a href="YOUR_AFFILIATE_LINK_HERE" class="prod-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img">🎯</div>
+      <div class="prod-body">
+        <div class="prod-tag">Fitness Gear</div>
+        <div class="prod-rating">★★★★☆ (4.5)</div>
+        <h3>Adjustable Dumbbell Set 20kg</h3>
+        <p>Space-saving home gym essential. Replaces 6 pairs of dumbbells.</p>
+        <div class="prod-footer">
+          <span class="prod-price">R 1,299</span>
+          <a href="YOUR_AFFILIATE_LINK_HERE" class="prod-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img">⌚</div>
+      <div class="prod-body">
+        <div class="prod-tag">Fitness Tech</div>
+        <div class="prod-rating">★★★★★ (4.9)</div>
+        <h3>Fitness Tracker Watch – Budget Pick</h3>
+        <p>Heart rate, sleep tracking, 7-day battery. Perfect for beginners.</p>
+        <div class="prod-footer">
+          <span class="prod-price">R 899</span>
+          <a href="YOUR_AFFILIATE_LINK_HERE" class="prod-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img">🌿</div>
+      <div class="prod-body">
+        <div class="prod-tag">Wellness</div>
+        <div class="prod-rating">★★★★☆ (4.6)</div>
+        <h3>Magnesium Glycinate 120 Caps</h3>
+        <p>Supports better sleep, muscle recovery, and stress relief. SA's top seller.</p>
+        <div class="prod-footer">
+          <span class="prod-price">R 349</span>
+          <a href="YOUR_AFFILIATE_LINK_HERE" class="prod-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="blog">
+  <div class="section-label">Latest articles</div>
+  <h2 class="section-title">Reviews & Guides</h2>
+  <p class="section-sub">In-depth, honest content to help you make the right choice.</p>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <div class="blog-img" style="background:#E1F5EE">🏃</div>
+      <div class="blog-body">
+        <div class="blog-meta">Fitness Gear · 5 min read</div>
+        <h3>Best Home Gym Equipment Under R2000 in SA (2026)</h3>
+        <p>You don't need a fancy gym. Here's what to buy to train at home on a budget.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-img" style="background:#FAEEDA">💊</div>
+      <div class="blog-body">
+        <div class="blog-meta">Supplements · 7 min read</div>
+        <h3>Top 5 Protein Powders on Takealot – Ranked by Value</h3>
+        <p>We compared price, taste, and protein quality so you don't have to.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-img" style="background:#E6F1FB">🌙</div>
+      <div class="blog-body">
+        <div class="blog-meta">Wellness · 4 min read</div>
+        <h3>Do Magnesium Supplements Actually Help You Sleep?</h3>
+        <p>We looked at the science and tested the top South African brands available.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="newsletter">
+  <h2>Get Weekly Deals & Reviews</h2>
+  <p>Join South Africans getting the best wellness deals every week.</p>
+  <div class="nl-form">
+    <input type="email" placeholder="Your email address">
+    <button>Subscribe</button>
+  </div>
+</div>
+
+<footer>
+  <strong>NaturaWell</strong>
+  <div class="footer-links">
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Affiliate Disclosure</a>
+  </div>
+  <p class="disclaimer">NaturaWell is a participant in affiliate programs including Takealot and Amazon Associates. We may earn a commission when you click links and make a purchase, at no extra cost to you. All reviews are our honest opinions.</p>
+</footer>
+
+</body>
+</html>
